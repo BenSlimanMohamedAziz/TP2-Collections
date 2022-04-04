@@ -1,0 +1,39 @@
+package Pile;
+
+public class CPile implements IPile {
+	public ArrayList <CPile> Pile;
+	PileObjets()
+	{
+		Pile = new ArrayList<>();
+	}
+	@Override
+	public boolean estVide() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void empile(Object a) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object depile() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int nbElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object sommet() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

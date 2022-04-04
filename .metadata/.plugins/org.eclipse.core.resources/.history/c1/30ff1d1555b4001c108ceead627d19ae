@@ -1,0 +1,9 @@
+package Pile;
+
+	interface IPile {
+		  boolean estVide();
+		  void empiler(Object o);
+		  Object sommet();
+		  Object dépiler();
+		  int nbElements();
+		}

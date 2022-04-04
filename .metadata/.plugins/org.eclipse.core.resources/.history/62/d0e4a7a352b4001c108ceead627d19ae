@@ -1,0 +1,44 @@
+package Pile;
+
+import java.util.ArrayList;
+
+public class CPile implements IPile {
+	
+	public ArrayList <CPile> Pile;
+	
+	CPile()
+	{
+		Pile = new ArrayList<>();
+	}
+	
+	@Override
+	public boolean estVide() {
+		return Pile.isEmpty();
+	}
+
+	@Override
+	public void empile(Object a) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Object depile() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int nbElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object sommet() {
+		if (!estVide())
+			return Pile.get(Pile.size() - 1);
+		return -1;
+	}
+
+}

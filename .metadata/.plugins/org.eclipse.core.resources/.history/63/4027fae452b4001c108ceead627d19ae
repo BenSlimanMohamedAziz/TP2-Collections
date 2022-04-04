@@ -1,0 +1,9 @@
+package Pile;
+
+public interface IPile <CPile> {
+boolean estVide();
+void empile(CPile a);
+void depile(); // retourne l'élément en sommet de pile et dépile
+int nbElements();
+CPile sommet(); // retourne le sommet de pile mais ne le dépile pas
+}

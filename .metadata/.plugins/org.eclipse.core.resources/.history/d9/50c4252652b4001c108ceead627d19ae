@@ -1,0 +1,55 @@
+package Pile;
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class CPile implements IPile {
+	   public static final int TAILLE_MAX = 5;
+	   public ArrayList <CPile> Pile;  
+	    public int nb;
+	    
+	    public CPile() {
+	    	Pile = new ArrayList<>();
+	        nb = 0;
+	    }
+
+	@Override
+	public boolean estVide() {
+		// TODO Auto-generated method stub
+		 return nb == 0;
+	}
+
+	public void empile(CPile a) {
+		  if (nb < TAILLE_MAX) {
+	           Pile.add(a);
+	            nb++;
+	        } else {
+	            System.out.println("Pile Pleine");
+	        }
+	}
+
+	@Override
+	public int depile() {
+		// TODO Auto-generated method stub
+		if(estVide()) {
+			 return 0;
+		}
+		else {
+			return nb--;
+		}
+	}
+
+	@Override
+	public int nbElements() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public CPile sommet() {
+	if(nb==0)
+		 System.out.println("Pile Vide");
+	return Pile.get(Pile.size() - 1);
+	}
+
+}
